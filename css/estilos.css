@@ -1,0 +1,572 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Signika Negative', sans-serif;
+}
+
+header{
+    /* background: #FEFAE0; */
+    background: #fbfaf4;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a, .menu a{
+    /* color: #4F9E1D; */
+    color:#17724D;
+    text-decoration: none;
+    padding: 0 20px 0 20px;
+}
+
+#logo{
+    font-size: 30px;
+}
+
+/*MENU*/
+
+.mostrar, .esconder{
+    font-size: 30px;
+    cursor:pointer;
+    display: none;
+    transition:0.5s;
+}
+
+#check{
+    display: none;
+}
+
+
+/*BANNER*/
+#banner{
+    background-image: url("../img/banner.jpg");
+    height: 65vh;
+    background-size: cover;
+    background-position: center;
+    filter: contrast(0.5);
+}
+
+/*SOBRE NOSOTROS*/
+.sobre-nosotros{
+    display: flex;
+    justify-content: center;
+    margin: 70px 0 40px 0;
+}
+
+.sobre-nosotros img{
+    width: 380px;
+    height: 320px;
+}
+
+.sobre-nosotros div{
+    margin: 0 40px 0 100px;
+}
+
+.sobre-nosotros .texto{
+    width: 380px;
+}
+
+#sobre-nosotros h3{
+    padding: 30px 0 25px 0;
+}
+
+.texto p{
+    text-align: justify;
+    padding-bottom: 20px;
+}
+
+/*PRODUCTO OFERTAS*/
+
+h2{
+    text-align: center;
+    margin: 70px 0 70px 0;
+}
+
+.producto-ofertas img{
+    width: 250px;
+    height: 220px;
+}
+
+.producto-ofertas{
+    display: flex;
+    justify-content: center;
+}
+
+.producto-ofertas div, .producto-varios div{
+    height: 450px;
+    margin: 0 10px 70px 10px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.producto-ofertas div:hover, .producto-varios div:hover{
+    position: relative;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.2);
+}
+
+.producto-ofertas p, .producto-varios p{
+    width: 250px;
+    padding: 25px 0 30px 0;
+}
+
+.producto-ofertas h3, .producto-varios h3{
+    padding-top: 25px;
+}
+
+.producto-ofertas h4, .producto-varios h4{
+    padding-bottom: 25px;
+}
+
+.btn-comprar{
+    text-decoration: none;
+    /* border: 2px #4F9E1D solid; */
+    border: 2px#17724D solid;
+    color: #17724D;
+    /* border-radius: 50%; */
+    padding: 10px 10px;
+    transition: 0.5s;
+
+}
+
+.btn-comprar:hover{
+    background: #17724D;
+    color:#fff;
+}
+
+/*ICONOS*/
+
+.iconos{
+    /* background: #FEFAE0; */
+    background: #edece2;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.iconos div{
+    margin: 70px 30px 70px 30px;
+    
+}
+
+.iconos div i{
+    padding: 0 0 0 30px;
+}
+
+.iconos h4{
+    margin-top: 20px;
+    
+}
+
+.iconos i{
+    font-size: 75px;
+}
+
+/*PRODUCTO VARIOS*/
+.producto-varios img{
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+}
+
+.producto-varios{
+    display: grid;
+    grid-template-areas:'prod1 prod1'
+                        'prod2 prod2';
+    justify-content: center;
+}
+
+.prod-v1{
+    grid-area: repeat(2 prod1);
+}
+
+.prod-v2{
+    grid-area: repeat(2, prod2);
+    margin-bottom: 100px;
+}
+
+.producto-varios div{
+    height: 470px;
+    margin: 0 100px 50px 100px;
+}
+
+/*CONTACTO*/
+
+.contacto{
+    background: #edece2;
+    display: flex;
+    justify-content: center;
+}
+.contenido-contacto h2, .contenido-contacto h3{
+    margin-bottom: 50px;
+}
+.contenido-contacto{
+    text-align: center;
+    padding: 40px;
+}
+.contacto form{
+    margin: 50px 20px 0 20px;
+}
+
+.datos{
+    display: flex;
+    justify-content: center;
+}
+
+.datos div{
+    margin:20px 30px 20px 0;
+}
+
+.msj textarea{
+    max-width: 420px;
+    min-width: 420px;
+    max-height: 100px;
+    min-height: 100px;
+}
+
+#nombre input{
+    margin-right: 20px;
+}
+
+form input, form textarea{
+    border-radius: 10px;
+    border:none;
+    padding: 10px 10px;
+    width: 100%;
+}
+
+form input:hover, form textarea:hover{
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.2);
+    border: 1px solid rgba(0,0,0,0.2);
+}
+
+form input::placeholder,
+form textarea::placeholder{
+    color:rgb(134, 125, 125);
+}
+
+.btn-formulario{
+    text-align: center;
+    margin: 20px auto 20px auto;
+    transition: 0.4s;
+}
+
+.btn-formulario button{
+    min-width: 80px;
+    max-width: 80px;
+    border: 2px #17724D solid;
+    color: #17724D;
+    background: none;
+}
+
+.btn-formulario button:hover{
+    color:#fff;
+    background: #17724D;
+}
+
+#advertencia{
+    color:#4F9E1D;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.contacto-iconos{
+    font-size: 25px;
+    transition: 0.5s;
+}
+
+.contacto-iconos i{
+    margin: 20px;
+}
+
+.fa-facebook:hover{
+    color: blue;
+    font-size: 30px;
+}
+
+.fa-instagram:hover{
+    color:red;
+    font-size: 30px;
+}
+
+.fa-whatsapp:hover{
+    color: green;
+    font-size: 30px;
+}
+
+/*ATAJO*/
+.atajo{
+    background: #edece2;
+    text-align: end;
+    padding: 50px 20px 10px 0;
+}
+
+.atajo a{
+    text-decoration: none;
+    color:black;
+}
+.atajo i{
+    cursor: pointer;
+    font-size: 35px;
+    transition: 0.5s;
+}
+
+.atajo i:hover{
+    font-size: 40px;
+}
+
+/*FOOTER*/
+footer{
+    background: #edece2;
+    height: 90px;
+    /* text-align: center; */
+}
+
+footer p{
+    text-align: center;
+    padding-top: 45px;
+    /* color:#fff; */
+    font-size: 18px;
+}
+
+/*DIFERENTES TAMAÑOS*/
+
+/*
+mobile: max-width: 480px
+tablets baja resolucion- ipads: max-width: 768px
+tablet max-width: 1024px
+*/
+@media(max-width: 480px){
+    /*LOGO*/
+    #logo{
+        font-size: 20px;
+    }
+
+    /*Banner*/
+    #banner{
+        display: none;
+    }
+
+    /*SOBRE NOSOTROS*/
+    .sobre-nosotros{
+        flex-direction: column;
+        
+    }
+
+    .sobre-nosotros img{
+        width: 280px;
+        height: 220px;
+    }
+
+    .sobre-nosotros div{
+        margin:auto;
+    }
+
+    .sobre-nosotros .texto{
+        width: 280px;
+    }
+
+    /*OFERTAS*/
+    .producto-ofertas{
+        flex-direction: column;
+    }
+
+    .producto-ofertas div, .producto-varios div{
+        margin: auto;
+    }
+
+    .producto-ofertas img{
+        width: 180px;
+        height: 150px;
+    }
+
+    /*ICONOS*/
+    .iconos{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .iconos i{
+        margin: auto;
+    }
+
+    .contenido{
+        text-align:inherit;
+    }
+
+    /* .contenido h4{
+        text-align: center;
+    } */
+
+    .producto-varios{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .producto-varios img{
+        width: 100px;
+        height: 100px;
+    }
+
+    /*CONTAACTO*/
+    
+    .contenido-contacto h3{
+        margin:auto;
+        width: 220px;
+    }
+    
+    .contacto{
+        flex-direction: column;
+    }
+
+    .contacto div, .contacto form{
+        margin: auto;
+    }
+
+    .datos{
+        flex-direction: column;
+    }
+
+    .datos div{
+        margin-bottom: 20px;
+        min-width: 220px;
+    }
+
+    .msj textarea{
+        min-width: 200px;
+    }
+
+}
+
+@media(min-width:480px) and (max-width: 768px){
+
+    /*BANNER*/
+    #banner{
+        height: 50vh;
+    }
+
+    /*SOBRE NOSOTROS*/
+    .sobre-nosotros{
+        flex-direction: column;
+    }
+
+    .sobre-nosotros img{
+        width: 400px;
+        height: 320px;
+    }
+
+    .sobre-nosotros div{
+        margin: auto;
+    }
+
+    .sobre-nosotros .texto{
+        min-width: 480px;
+    }
+
+
+    /*OFERTAS*/
+    .producto-ofertas{
+        display: flex;
+        flex-direction: column;
+    }
+    .producto-ofertas div, .producto-varios div{
+        margin: auto auto 70px auto;
+    
+    }
+
+    .producto-ofertas img{
+        width: 280px;
+        height: 250px;
+    }
+
+    /*CONTACTO*/
+    .contacto{
+        flex-direction: column;
+    }
+
+    .contacto div, .contacto form{
+        margin: auto;
+    }
+}
+
+/*ESTILOS GENERALES*/
+@media (max-width: 768px){
+    /*MENU*/
+    .mostrar, .menu a{
+        display: block;
+    }
+
+    .mostrar{
+        padding-right:20px;
+    }
+    .menu{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #edece2;
+        right: -100%;
+        top:0;
+        text-align: center;
+        padding: 100px 0px;
+        z-index: 100;
+        transition: 0.5s;
+    }
+
+    .menu a{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .esconder{
+        display: block;
+        padding: 10px;
+        color:#17724D;
+    }
+
+    #check:checked ~ .menu{
+        right: 0;
+    }
+
+    /*OFERTAS*/
+    .producto-ofertas div:hover, .producto-varios div:hover{
+        box-shadow: none;
+    }
+
+    .producto-varios img:hover{
+        border-bottom: none;
+    }
+
+    .btn-comprar{
+        background: #17724D;
+        color:#fff
+    }
+
+    /*ICONOS*/
+    .contenido h4{
+        text-align: center;
+    }
+
+    /*CONTACTO*/
+    form input:hover, form textarea:hover{
+        box-shadow: none;
+        border: none;
+    }
+
+    .datos input{
+        margin:0;
+        max-width: 200px;
+        margin-bottom: 30px;
+    }
+    
+    .msj textarea{
+        margin-bottom: 30px;
+    }
+
+    .btn-formulario button{
+        background: #17724D;
+        color:#fff;
+    }
+}

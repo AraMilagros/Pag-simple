@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--google fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap" rel="stylesheet">
+    <!--iconos-->
+    <script src="https://kit.fontawesome.com/3bd2724c5a.js" crossorigin="anonymous"></script>
+    <!--estilos css-->
+    <link rel="stylesheet" href="./css/estilos.css">
+    <title>TPO DESARROLLO WEB</title>
+</head>
+<body>
+    <header>
+        <a href="#logo" id="logo">FARMACIA</a>
+        <div>
+            <input type="checkbox" id="check">
+            <label for="check" class="mostrar">&#8801</label>
+            <nav class="menu">
+                <a href="#nosotros">SOBRE NOSOTROS</a>
+                <a href="#ofertas">OFERTAS</a>
+                <a href="#varios">PRODUCTOS VARIOS</a>
+                <a href="#contacto">CONTACTOS</a>
+                <label for="check" class="esconder">&#215</label>            
+            </nav>
+        </div>
+    </header>
+    
+    <section id="banner"></section>
+
+    <section id="nosotros" class="sobre-nosotros">
+        <div class="texto">
+            <h3>SOBRE NOSOTROS</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                Tenetur fugiat est quod magnam voluptatibus fugit beatae, 
+                quia doloremque sit esse. Lorem ipsum dolor sit. </p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                Tenetur fugiat est quod magnam voluptatibus fugit beatae, 
+                quia doloremque sit esse.</p>
+        </div>
+        <div class="img">
+            <img src="./img/doctor.jpg">
+        </div>
+    </section>
+
+    <h2 id="ofertas">OFERTAS DEL MES</h2>
+    <section class="producto-ofertas">
+        <div class="img1">
+            <img src="./img/crema2.jpg">
+            <h3>CREMA HUMECTANTE</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+            <h4>$13.33</h4>
+            <a href="#" class="btn-comprar">Comprar</a>
+        </div>
+        <div class="imgC">
+            <img src="./img/crema2.jpg">
+            <h3>CREMA HUMECTANTE</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+            <h4>$13.33</h4>
+            <a href="#" class="btn-comprar">Comprar</a>
+        </div>
+        <div class="img2">
+            <img src="./img/crema3.jpg">
+            <h3>CREMA HUMECTANTE</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+            <h4>$13.33</h4>
+            <a href="#" class="btn-comprar">Comprar</a>
+        </div>
+    </section>
+
+    <section>
+        <div class="iconos">
+            <!--entregas-->
+            <div class="contenido">
+                <i class="fa-solid fa-truck"></i>
+                <h4>Entregas a domicilio</h4>
+            </div>
+            <!--metodo de pago-->
+            <div class="contenido">
+                <i class="fa-solid fa-credit-card"></i>
+                <h4>Varios métodos de pago</h4>
+            </div>
+            <!--local-->
+            <div class="contenido">
+                <i class="fa-solid fa-map-location-dot"></i>
+                <h4>Sucursal más cercana</h4>
+            </div>
+        </div>
+    </section>
+
+    <h2 id="varios">PRODUCTOS VARIOS</h2>
+
+    <section class="producto-varios">
+        <div class="prod-v1">
+            <img src="./img/frasco2.png">
+            <h3>Lorem ipsum dolor sit.</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+            <h4>$13.33</h4>
+            <a href="#" class="btn-comprar">Comprar</a>
+        </div>
+        <div class="prod-v1">
+            <img src="./img/frasco2.png">
+            <h3>Lorem ipsum dolor sit.</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+            <h4>$13.33</h4>
+            <a href="#" class="btn-comprar">Comprar</a>
+        </div>
+        <div class="prod-v2">
+            <img src="./img/frasco3.png">
+            <h3>Lorem ipsum dolor sit.</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+            <h4>$13.33</h4>
+            <a href="#" class="btn-comprar">Comprar</a>
+        </div>
+        <div class="prod-v2">
+            <img src="./img/frasco3.png">
+            <h3>Lorem ipsum dolor sit.</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+            <h4>$13.33</h4>
+            <a href="#" class="btn-comprar">Comprar</a>
+        </div>
+    </section>
+
+    <section class="contacto">
+        <div class="contenido-contacto">
+            <h2 id="contacto">CONTÁCTANOS</h2>
+            <h3>Si tiene alguna consulta puede comicarse por este formulario
+                <br>o através de otros medios:
+            </h3>
+            <div class="contacto-iconos">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-whatsapp"></i>
+            </div>
+        </div>
+        <form action="" method="POST" id="formulario">
+            <div class="datos" class="formulario">
+                <div>
+                    <input type="text" name="nombre" id="nombre"
+                    placeholder="Nombre" requerid>
+                </div>
+
+                <div>
+                    <input type="email" name="email" id="email"
+                    placeholder="Email" required>
+                </div>
+            </div>
+            
+            <div class="msj">
+                <textarea name="mjs" id="msj" cols="30" 
+                rows="10" placeholder="Mensaje" required></textarea>
+            </div>
+                
+            <div class="btn-formulario" class="formulario">
+                <button type="submit">Enviar</button>
+                <p id="advertencia"></p>
+            </div>
+        </form>
+    </section>
+    <section class="atajo">
+        <a href="#logo"><i class="fa-solid fa-circle-arrow-up"></i></a>
+    </section>
+    <footer>
+        <p>&copy;farmacia</p>
+    </footer>
+    <!--scrip para validar formulario-->
+    <script src="./js/validar.js"></script>
+</body>
+</html>
